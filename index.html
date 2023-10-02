@@ -10,14 +10,13 @@
   <header>
     <div class="container">
       <nav>
-       <h3 class="logo">uk<span>Dev</span>
+       <h3 class="logo"><span>uk</span>Dev
         <span class="underline"></span>
       </h3>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -29,36 +28,123 @@
   <!---------About------------>
   <div id="about">
     <div class="container">
-      <div class="about-row">
+      <div class="flex-container js-flex-container">
         <div class="about-col1">
           <img src="images/ukandie2.jpg" width="300" height="300">
         </div>
         <div class="about-col2">
           <h3 class="sub-title">About Me</h3>
             <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque soluta praesentium. Fuga ipsum, cum officia nam ipsa doloribus voluptate possimus rerum odio, adipisci expedita distinctio! At eos totam neque maxime obcaecati quae odit sapiente optio debitis ratione? Placeat aperiam, laudantium culpa sit quod in quas </p>
-            <div>
-              <p class="links active-link" data-id="skills">Skills</p>
-              <p class="links" data-id="experience">Experience</p>
-              <p class="links" data-id="education" >Education</p>
+            <div class="js-about">
+                <p class="links active-link" data-id="skills">My Skills</p>
+                <p class="links" data-id="experience">Services</p>
+                <p class="links" data-id="education" >Education</p>
+              
+              <div class="content-container">
+                <div class="contents active-content" id="skills">
+                  <div class="skill-grid">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Javascript</p>
+                    <p>Git and gitHub</p>
+                  </div>
+                </div>
+                <div class="contents " id="experience">
+                  <p class="p"><span>Web Development</span><br>Web app development</p>
+                  <p class="p"><span>App development</span><br> Android/iOS apps development</p>
+                </div>
+                <div class="contents" id="education">
+                  <p class="p"><span>Web Development</span><br>Web app development</p>
+                  <p class="p"><span>App development</span><br> Android/iOS apps development</p>
+                </div>
             </div>
-            <div class="content-container">
-              <div class="contents " id="skills">
-                <p class="p"><span>Web Development</span><br>Web app development</p>
-                <p class="p"><span>App development</span><br> Android/iOS apps development</p>
-              </div>
-              <div class="contents active-content" id="experience">
-                <p class="p"><span>Lorem, ipsum.</span><br>Lorem, ipsum dolor.</p>
-                <p class="p"><span>App development</span><br> Android/iOS apps development</p>
-              </div>
-              <div class="contents" id="education">
-                <p class="p"><span>Web Development</span><br>Web app development</p>
-                <p class="p"><span>App development</span><br> Android/iOS apps development</p>
-              </div>
             </div>
         </div>
       </div>
     </div>
-    
+  </div>
+  <!--------------Portfolio----------------->
+  <div id="portfolio">
+    <div class="container">
+      <h3 class="sub-title">Portfolio</h3>
+      <div class="project-grid">
+        <div class="project-grid-col">
+          <img src="images/study-table.webp" width="200" height="200">
+          <div class="items">
+            <h4>E-commmerce App</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eius.</p>
+            <p><i>external link icon</i></p>
+          </div>
+        </div>
+        <div class="project-grid-col">
+          <img src="images/study-table.webp" width="200" height="200">
+          <div class="items">
+            <h4>Restaurant App</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eius.</p>
+            <i>external link icon</i>
+          </div>
+        </div>
+        <div class="project-grid-col">
+          <img src="images/study-table.webp" width="200" height="200">
+          <div class="items">
+            <h4>Social Media App</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eius.</p>
+            <i>external link icon</i>
+          </div>
+        </div>
+        <div class="project-grid-col">
+          <img src="images/study-table.webp" width="200" height="200">
+          <div class="items">
+            <h4>Fintech App</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p><i>external link icon</i></p>
+          </div>
+        </div>
+        <div class="project-grid-col">
+          <img src="images/study-table.webp" width="200" height="200">
+          <div class="items">
+            <h4>EMail news letter</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p><i>external link icon</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------Contact------------------>
+  <div id="contact">
+    <div class="container">
+      <div class="flex-container">
+        <div class="contact-col1">
+          <h3 class="sub-title">Contact Me</h3>
+          <p>Yes i'm at your service,<br> contact me to unleash my amazing front-end skills to crafting awesome and engaging user interfaces for your business.</p>
+        </div>
+        <div class="contact-col2">
+          <div class="grid-col2">
+            <div class="details">
+              <i>phone icon</i>
+              <p>Call Me On</p>
+              <p>+23409078512087</p>
+            </div>
+           <div  class="details">
+            <i>Email icon</i>
+            <p>Send Me a Mail</p>
+            <p>ukandieudo202@gmail.com</p>
+           </div>
+           <div  class="details">
+            <i>Whatsapp</i>
+            <p>Whatsapp Me</p>
+            <p>+23409078512087</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="footer">
+      <p> &copy;<span class="span"></span>: Coded by &lt; ukandieSunday / &gt;</p>
+    </div>
   </div>
   <script src="scripts/app.js"></script>
 </body>
