@@ -16,6 +16,6 @@ const id = event.target.dataset.id;
   document.getElementById(id).classList.add("active-content");
 }
 })
-// const span = document.querySelector(".span");
-// const year = new Date().getFullYear();
-// span.textContent = `Copy right ${year}`
+const span = document.querySelector(".span");
+const year = new Date().getFullYear();
+span.textContent = `Copy right ${year}`
