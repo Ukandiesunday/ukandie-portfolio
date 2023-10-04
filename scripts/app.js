@@ -16,6 +16,28 @@ const id = event.target.dataset.id;
   document.getElementById(id).classList.add("active-content");
 }
 })
+//To display current year 
 const span = document.querySelector(".span");
 const year = new Date().getFullYear();
 span.textContent = `Copy right ${year}`
+
+// To apply fixed nav when the page scrolls
+const fixedNav = document.querySelector(".fixed-nav");
+window.addEventListener("scroll", ()=>{
+  const navHeight = fixedNav.getBoundingClientRect().height;
+  const scrollHeight = window.scrollY;
+ scrollHeight > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
+})
+//To toggle navbar
+const open = document.querySelector(".open");
+const menu = document.querySelector(".side-menu");
+const close = document.querySelector(".close");
+open.addEventListener("click",(e)=>{
+  menu.classList.toggle("side-bar");
+  e.currentTarget.classList.toggle("toggle");
+})
+window.addEventListener("scroll",()=>{
+  if(menu.classList.contains("side-bar")){
+    menu.classList.remove("side-bar");
+  }
+})
