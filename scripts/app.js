@@ -31,13 +31,13 @@ window.addEventListener("scroll", ()=>{
 //To toggle navbar
 const open = document.querySelector(".open");
 const menu = document.querySelector(".side-menu");
-const close = document.querySelector(".close");
 open.addEventListener("click",(e)=>{
   menu.classList.toggle("side-bar");
-  e.currentTarget.classList.toggle("toggle");
+  open.classList.toggle("toggle-icon");
 })
 window.addEventListener("scroll",()=>{
   if(menu.classList.contains("side-bar")){
     menu.classList.remove("side-bar");
+    open.classList.remove("toggle-icon");
   }
 })
