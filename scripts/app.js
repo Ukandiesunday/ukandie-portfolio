@@ -23,11 +23,12 @@ span.textContent = `Copy right ${year}`
 
 // To apply fixed nav when the page scrolls
 const fixedNav = document.querySelector(".fixed-nav");
-window.addEventListener("scroll", ()=>{
-  const navHeight = fixedNav.getBoundingClientRect().height;
-  const scrollHeight = window.scrollY;
- scrollHeight > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
-})
+  window.onscroll = function(){
+    const navHeight = fixedNav.getBoundingClientRect().height;
+    const scrollHeight = window.scrollY;
+   scrollHeight > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
+  }
+ 
 //To toggle navbar
 const open = document.querySelector(".open");
 const menu = document.querySelector(".side-menu");
