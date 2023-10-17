@@ -23,12 +23,25 @@ span.textContent = `Copy right ${year}`
 
 // To apply fixed nav when the page scrolls
 const fixedNav = document.querySelector(".fixed-nav");
+const topLink = document.querySelector(".link-2");
+
   window.onscroll = function(){
     const navHeight = fixedNav.getBoundingClientRect().height;
     const scrollHeight = window.scrollY;
    scrollHeight > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
+
+   scrollHeight > 300 ? topLink.classList.add("top-link"):topLink.classList.remove("top-link");
   }
+
+  topLink.addEventListener("click",()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
  
+  //Show back to top button
+  function showTopLink () {
+
+  }
 //To toggle navbar
 const open = document.querySelector(".open");
 const menu = document.querySelector(".side-menu");

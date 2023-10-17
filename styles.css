@@ -158,14 +158,14 @@ h3 span{
   .perspective{
     margin:10px auto;
     perspective:70px;
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     border:2px solid blueviolet;
     border-radius:5px;
   }
   .shape{
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     background-color:rgb(11, 11, 68);
     transform:rotateX(45deg);
   }
@@ -173,7 +173,6 @@ h3 span{
 .stars{
   position:absolute;
   right:100px;
-  
 }
 .fa-star{
   animation:rotate 2s infinite linear;
@@ -241,8 +240,8 @@ h3 span{
   padding:4px;
   background-color: blueviolet;
   border-radius:10px;
- 
 }
+
 .links.active-link{
 color:blueviolet;
 border-bottom:2px solid #f44336;
@@ -433,6 +432,26 @@ text-align: center;
  transform:skew(5deg);
  color:white;
 }
+
+.link-2{
+  position:fixed;
+  right:30px;
+  bottom:200px;
+  font-size:30px;
+  background-color: #f44336;
+  padding:5px;
+  border-radius:10px;
+  animation: bounce 1s infinite linear;
+  opacity:0;
+  display:inline-block;
+}
+.fa-angle-up{
+  font-size:25px;
+}
+.link-2.top-link{
+  opacity:1;
+}
+
 #footer{
   padding: 30px 0;
   text-align: center;
