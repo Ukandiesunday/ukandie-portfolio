@@ -55,3 +55,9 @@ window.addEventListener("scroll",()=>{
     open.classList.remove("toggle-icon");
   }
 })
+
+//To show remove preloader
+const preloader = document.querySelector(".preloader");
+window.onload = function(){
+  preloader.style.display="none";
+}
