@@ -307,7 +307,7 @@ border-bottom:2px solid #f44336;
  }
  
  .service-grid div:hover{
-  box-shadow: 0 0 10px whitesmoke;
+  box-shadow: 0 0 13px whitesmoke;
   cursor: pointer;
  }
 
@@ -341,29 +341,41 @@ border-bottom:2px solid #f44336;
   position:relative;
   color:black;
   padding:0 auto ;
+  overflow:hidden;
  }
-
+ .project-grid-col:hover .items{
+  opacity: 1;
+ 
+ }
  .items{
+  transition:opacity 2.2s;
   position:absolute;
-  left:5%;
-  top:30%;
+  left:1%;
+  top:1%;
+  opacity:0;
   transform: translate(-50% -50%);
   width:100%;
-  overflow: hidden;
-  height:250px;
-  padding:0 50px;
+  height:100%;
+  padding:0 15px;
   text-align: center;
+  color:white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background:rgba(25, 25, 132,0.3);
+  border-radius:10px;
  }
 
  .items p{
-font-size: 20px;
+font-size: 17px;
 padding: 10px  0px;
  }
  .items i,
 .items h4{
   display:block;
   font-size:22px;
-  color:blueviolet;
+  color:blue;
+  padding:10px;
  }
  .project-grid-col img{
   border-radius:10px;
