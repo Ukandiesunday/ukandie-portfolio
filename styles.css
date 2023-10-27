@@ -140,7 +140,7 @@ ul{
 ul a{
   text-decoration: none;
   font-size: 18px;
-  color:#ea6405;
+  color:black;
   position:relative;
 }
 ul a::after{
@@ -257,13 +257,14 @@ h3 span{
 color:black;
 }
 .links{
-  display:inline-block;
-  margin:0 50px 7px 0;
+  white-space: nowrap;
+  margin:0 20px 7px 0;
   font-size:17px;
   padding:8px;
   background-color: #dcb9a1;
   border-radius:10px;
   transition: all 0.5s;
+  border:none;
 }
 .links:hover{
 cursor: pointer;
@@ -334,6 +335,9 @@ color:white;
 
  h2 span{
   color:#ea6405;
+ }
+ h2{
+  font-size:25px;
  }
  .service-grid div:hover{
   box-shadow: 0 0 13px whitesmoke;
@@ -484,8 +488,8 @@ text-align: center;
 }
 .link-2{
   position:fixed;
-  right:30px;
-  bottom:50px;
+  right:25px;
+  bottom:55px;
   background-color:#ea6405;
   padding:3px;
   border-radius:6px;
@@ -556,6 +560,9 @@ text-align: center;
   padding:20px 0;
   font-size: 25px;
 }
+h2{
+  font-size:20px;
+ }
 .grid-col2{
   grid-template-columns:1fr;
   padding-top: 10px;
@@ -586,6 +593,7 @@ font-size: 14px;
 .header-text{
   font-size: 20px;
 }
+
 #about{
   padding-top:20px;
 }
