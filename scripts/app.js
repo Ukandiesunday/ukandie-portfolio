@@ -38,10 +38,7 @@ const topLink = document.querySelector(".link-2");
     document.documentElement.scrollTop = 0;
   })
  
-  //Show back to top button
-  function showTopLink () {
-
-  }
+ 
 //To toggle navbar
 const open = document.querySelector(".open");
 const menu = document.querySelector(".side-menu");
