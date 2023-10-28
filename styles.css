@@ -13,10 +13,12 @@ body{
 header{
   width:100%;
   min-height:100vh;
-  background:linear-gradient(rgba(0, 0, 0,0.5),rgb(0,0,30,0.2)),url(images/ukandie2.jpg);
+  background:linear-gradient(rgba(0, 0, 0,0.5),
+  rgb(0,0,30,0.2)),url(images/ukandie2.jpg);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  position:relative;
 }
 
 .preloader{
@@ -31,7 +33,7 @@ header{
 .content{
   position:absolute;
   top:50%;
-  left:40%;
+  left:45%;
   transform:translate(-50%, -50%);
  border:4px solid red;
  border-radius:50%;
@@ -67,7 +69,7 @@ header{
   padding-block:7px;
   border-radius:5px;
   border:2px solid #c45508;
- 
+  z-index: 3;
 }
 .menu-btn, 
 .menu-btn::after, 
@@ -142,6 +144,7 @@ ul a{
   font-size: 18px;
   color:black;
   position:relative;
+  transition:all 0.5s;
 }
 ul a::after{
 content:"";
@@ -156,6 +159,9 @@ transition: all 0.4s linear;
 ul a:hover::after{
 width:100%;
 border-radius: 10px;
+}
+ul a:hover{
+  color:#ea6405;
 }
 .logo{
   font-size: 23px;
@@ -187,6 +193,7 @@ h3 span{
   border-radius: 10px;
 }
 .header-text{
+  position:absolute;
   padding-inline:10%;
    margin-top:20%;
 }
@@ -202,6 +209,47 @@ h3 span{
   margin-top:20px;
   font-weight: 600;
 }
+
+.type-text{
+  white-space:nowrap;
+  overflow:hidden;
+  width:0;
+  animation:typing 2s steps(14, end); 
+}
+
+.type-text::before{
+content:"Ukandie Sunday";
+/* animation:typing 10s steps(14, end); */
+}
+@keyframes typing {
+  0%{
+    width:0;
+  }
+  100%{
+    width:100%;
+  }
+}
+
+.header-desc{
+  display:flex;
+  justify-content: flex-end;
+  flex-direction:column;
+ position:absolute;
+  right:35px;
+  top:100px;
+  z-index:1;
+}
+
+.header-desc p{
+margin:13px;
+font-size:14px;
+font-weight:600;
+background:linear-gradient(90deg,red, rgb(9, 9, 108),red);
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+}
+
 
 /* -------------About-------------- */
 #about{
@@ -370,9 +418,8 @@ color:white;
   width:100%;
   display:block;
   object-fit: cover;
-  
-  
  }
+ 
  .project-grid-col:hover{
   transform: scale(1.05);
  }
@@ -479,9 +526,12 @@ color:white;
 text-align: center;
   padding:10px;
   border-radius:10px;
-  background: linear-gradient(#ddc7a0,
- 65%, #ddc7a0);
- box-shadow:0 0 4px 0  #ea6405;
+ background-color: whitesmoke;
+ box-shadow:0 0 7px 0 #ea64;
+ border:2px dotted  #ea6405;
+ border-left:none;
+ border-top:none;
+
 }
 .details p{
   color:#ea6405;
@@ -508,8 +558,8 @@ text-align: center;
 #footer{
   padding: 30px 0;
   text-align: center;
-  background:black;
- color:white;
+  background:rgb(221,199,160);
+ color: black;
 }
 #footer span{
   color:red;
@@ -522,15 +572,16 @@ text-align: center;
 @media  (max-width:800px){
 .side-menu{
   position:fixed;
-  width:100%;
+  width:300px;
   height:100vh;
-  background:#c45508;
+  background: #efefef;
   z-index:2;
   font-size:18px;
-  top:70px;
-  right:-100%;
+  top:0;
+  right:-300px;
   transition: right 0.7s;
   text-align: center;
+  padding-top:70px;
 }
 .side-menu.side-bar{
   right:0;
@@ -613,5 +664,9 @@ font-size: 14px;
 }
 .skill-grid{
   grid-template-columns:repeat(2, 1fr) ;
+}
+.header-text{
+  padding-inline:10%;
+   margin-top:40%;
 }
 }

@@ -53,6 +53,7 @@ window.addEventListener("scroll",()=>{
   }
 })
 
+
 //To show remove preloader
 const preloader = document.querySelector(".preloader");
 window.onload = function(){
