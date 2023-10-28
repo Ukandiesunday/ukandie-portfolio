@@ -27,7 +27,7 @@ header{
   bottom:0;
   width:100%;
   height:100%;
-  background:rgb(0, 0, 25);
+  background:#ea6405;
   z-index:999;
 }
 .content{
@@ -673,10 +673,10 @@ font-size: 14px;
 }
 .header-text{
   padding-inline:10%;
-   bottom:50px;
+   bottom:100px;
 }
 .header-desc{
-  top:150px;
+  top:350px;
   right:20px;
 }
 }
