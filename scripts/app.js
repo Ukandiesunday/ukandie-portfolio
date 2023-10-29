@@ -53,6 +53,19 @@ window.addEventListener("scroll",()=>{
   }
 })
 
+//Auto type text
+
+const textToType = "Ukandie Sunday";
+const textElem = document.querySelector(".type-text");
+let index = 0;
+function typeText() {
+if(index < textToType.length){
+  textElem.innerHTML += textToType.charAt(index);
+  index ++;
+  setTimeout(typeText, 300)
+}
+}
+typeText();
 
 //To show remove preloader
 const preloader = document.querySelector(".preloader");
