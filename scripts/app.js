@@ -54,18 +54,41 @@ window.addEventListener("scroll",()=>{
 })
 
 //Auto type text
-
-const textToType = "Ukandie Sunday";
+const textToType = "Ukandie Sunday,";
 const textElem = document.querySelector(".type-text");
 let index = 0;
-function typeText() {
+const  typeText = ()=> {
 if(index < textToType.length){
   textElem.innerHTML += textToType.charAt(index);
   index ++;
   setTimeout(typeText, 300)
 }
 }
-typeText();
+
+window.addEventListener("DOMContentLoaded",()=>{
+  typeText();
+} )
+
+setTimeout(()=>{
+const intro = document.querySelector(".intro");
+intro.classList.add("intro-display")
+},4500)
+
+
+const aboutTitle = document.querySelector(".about-title")
+const serviceTitle = document.querySelector(".service-title")
+const myWork = document.querySelector(".work-title");
+const contactTitle = document.querySelector(".contact-title")
+window.onscroll = function(){
+ let scrollHeight2 = window.scrollY;
+
+ scrollHeight2 > 900 ? aboutTitle.classList.add("show-about-t"):aboutTitle.classList.remove("show-about-t");
+ scrollHeight2 >= 1500 ? serviceTitle.classList.add("show-service-t"):serviceTitle.classList.remove("show-service-t");
+
+ scrollHeight2 >= 2300 ? myWork.classList.add("show-work-t"):myWork.classList.remove("show-work-t");
+ scrollHeight2 >= 3900 ? contactTitle.classList.add("show-contact-t"):contactTitle.classList.remove("show-contact-t");
+ console.log(scrollHeight2); 
+}
 
 //To show remove preloader
 const preloader = document.querySelector(".preloader");
