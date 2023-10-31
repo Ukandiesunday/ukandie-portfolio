@@ -38,7 +38,6 @@ const topLink = document.querySelector(".link-2");
     document.documentElement.scrollTop = 0;
   })
  
- 
 //To toggle navbar
 const open = document.querySelector(".open");
 const menu = document.querySelector(".side-menu");
@@ -82,8 +81,8 @@ const contactTitle = document.querySelector(".contact-title")
 window.onscroll = function(){
  let scrollHeight2 = window.scrollY;
 
- scrollHeight2 > 900 ? aboutTitle.classList.add("show-about-t"):aboutTitle.classList.remove("show-about-t");
- scrollHeight2 >= 1500 ? serviceTitle.classList.add("show-service-t"):serviceTitle.classList.remove("show-service-t");
+ scrollHeight2 > 500 ? aboutTitle.classList.add("show-about-t"):aboutTitle.classList.remove("show-about-t");
+ scrollHeight2 >= 1200 ? serviceTitle.classList.add("show-service-t"):serviceTitle.classList.remove("show-service-t");
 
  scrollHeight2 >= 2300 ? myWork.classList.add("show-work-t"):myWork.classList.remove("show-work-t");
  scrollHeight2 >= 3900 ? contactTitle.classList.add("show-contact-t"):contactTitle.classList.remove("show-contact-t");

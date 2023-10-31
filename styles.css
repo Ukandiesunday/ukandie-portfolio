@@ -254,7 +254,7 @@ color:transparent;
     opacity: 0;
     position:relative;
     left:-200px;
-    transition: all 1.5s ease-in-out
+    transition: all 1.3s ease-in-out
   }
 
   .about-title.show-about-t,
