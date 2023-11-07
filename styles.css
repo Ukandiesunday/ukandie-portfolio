@@ -101,20 +101,19 @@ background-color:#c45508;
   background-color: transparent;
 }
 
-.show-nav{
-  position:fixed;
-  background:#efefef;
+.fixed-nav{
+  padding:1.5rem 10%;
   width:100%;
   top:0;
   left:0;
   z-index: 70;
 }
+.fixed-nav.show-nav{
+  position:fixed;
+  background:#efefef;
+}
 .show-nav ul a{
   color:#ea6405;
-}
-
-.fixed-nav{
-  padding:1.5rem 10%;
 }
 .container{
   padding:10px 5%;
@@ -544,6 +543,7 @@ color:white;
   text-decoration: none;
   color:rgb(22, 22, 22);
   font-size:16px;
+  text-wrap: nowrap;
 }
 
 .details{
@@ -649,7 +649,7 @@ h2{
 .contact-text,
  .about-text{
   line-height:27px;
-  font-size:15px;
+  font-size:16px;
   letter-spacing: 1px;
   padding-right: 10px;
   font-weight: 500;
@@ -698,6 +698,6 @@ font-size: 14px;
 }
 .cv{
   margin:0 auto;
-  width:40%;
+  width:50%;
 }
 }

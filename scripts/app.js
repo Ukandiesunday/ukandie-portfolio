@@ -21,23 +21,7 @@ const span = document.querySelector(".span");
 const year = new Date().getFullYear();
 span.textContent = `Copy right ${year}`
 
-// To apply fixed nav when the page scrolls
 
-const fixedNav = document.querySelector(".fixed-nav");
-const topLink = document.querySelector(".link-2");
-  window.onscroll = function(){
-    
-    const navHeight = fixedNav.getBoundingClientRect().height;
-    const scrollHeight = window.scrollY;
-   scrollHeight > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
-
-   scrollHeight > 100 ? topLink.classList.add("top-link"):topLink.classList.remove("top-link");
-  }
-
-  topLink.addEventListener("click",()=>{
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  })
  
 //To toggle navbar
 const open = document.querySelector(".open");
@@ -65,6 +49,7 @@ if(index < textToType.length){
 }
 }
 
+//Adds hero section introduction
 window.addEventListener("DOMContentLoaded",()=>{
   typeText();
 } )
@@ -75,20 +60,40 @@ intro.classList.add("intro-display")
 },5000)
 
 
+
+  const fixedNav = document.querySelector(".fixed-nav");
+  const topLink = document.querySelector(".link-2");
+
+  topLink.addEventListener("click",()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
+
+
 const aboutTitle = document.querySelector(".about-title")
 const serviceTitle = document.querySelector(".service-title")
 const myWork = document.querySelector(".work-title");
 const contactTitle = document.querySelector(".contact-title")
+
+
 window.onscroll = function(){
  let scrollHeight2 = window.scrollY;
 
+ // Adds fixed navbar 
+ const navHeight = fixedNav.getBoundingClientRect().height;
+scrollHeight2 > navHeight ? fixedNav.classList.add("show-nav"):fixedNav.classList.remove("show-nav");
+
+//Adds back to top link
+scrollHeight2 > 100 ? topLink.classList.add("top-link"):topLink.classList.remove("top-link");
+
+// Adds scroll in subheaders
  scrollHeight2 > 500 ? aboutTitle.classList.add("show-about-t"):aboutTitle.classList.remove("show-about-t");
  scrollHeight2 >= 1200 ? serviceTitle.classList.add("show-service-t"):serviceTitle.classList.remove("show-service-t");
 
  scrollHeight2 >= 2300 ? myWork.classList.add("show-work-t"):myWork.classList.remove("show-work-t");
  scrollHeight2 >= 3900 ? contactTitle.classList.add("show-contact-t"):contactTitle.classList.remove("show-contact-t");
- console.log(scrollHeight2); 
 }
+
 
 //To show remove preloader
 const preloader = document.querySelector(".preloader");
