@@ -161,6 +161,7 @@ ul a:hover{
   font-size: 23px;
   display:inline;
   position:relative;
+  z-index: 3;
 }
 
 h3 span{
@@ -594,6 +595,7 @@ color:white;
 #footer p{
   font-size:15px;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 #footer span{
@@ -616,7 +618,7 @@ color:white;
   right:-280px;
   transition: right 0.7s;
   text-align: center;
-  padding-top:70px;
+  padding-top:95px;
 }
 .side-menu.side-bar{
   right:0;
@@ -691,7 +693,7 @@ p span{
   padding-top:20px;
 }
 .footer{
-  font-size: 15px;
+  font-size: 14px;
 }
 .header-text h1{
   font-size: 30px;
