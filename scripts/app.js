@@ -19,8 +19,7 @@ const id = event.target.dataset.id;
 //To display current year 
 const span = document.querySelector(".span");
 const year = new Date().getFullYear();
-span.textContent = `Copy right ${year}`
-
+span.textContent = `Copy right ${year}`;
 
  
 //To toggle navbar
