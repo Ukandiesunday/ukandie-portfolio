@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=egde">
-  <title>Personal Portfolio Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/cbc94a0dc0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="preloader">
-    <div class="content"><span class="spin"></span></div>
-  </div>
-  <header>
-    <div class="fixed-nav">
-      <nav class="nav">
-        <h3 class="logo"><span>uk</span>Dev
-          <span class="underline"></span>
-        </h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=egde" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cbc94a0dc0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="content"><span class="spin"></span></div>
+    </div>
+    <header>
+      <div class="fixed-nav">
+        <nav class="nav">
+          <h3 class="logo">
+            <span>uk</span>Dev
+            <span class="underline"></span>
+          </h3>
           <ul class="side-menu">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#project">Projects</a></li>
@@ -28,195 +38,252 @@
           <div class="btn-container open">
             <div class="menu-btn"></div>
           </div>
-      </nav>
-    </div>
-    <div class="header-desc">
-      <p class="ani-1">Attention to detail</p>
-      <p class="ani-2">Problem solving</p>
-      <p class="ani-3">Team collaboration</p>
-    </div>
-    <div class="header-text">
-      <div class="typing-container">
-      <h1 class="type-container">Hi, I'm <span class="type-text"></span><br>Front-end developer.</h1>
-    </div>
-       <p class="intro">I articulate creativity with code to craft engaging user interfaces.</p>
-    </div>
-    <div class="perspective">
-      <div class="shape"></div>
-    </div>
-  </header>
-  <!---------About------------>
-  <div id="about">
-    <div class="container">
-      <div class="flex-container abt-container" id="js-flex-container">
-        <div class="about-col1">
-          <img src="images/ukandie2.jpg" width="300" height="300">
+        </nav>
+      </div>
+      <div class="header-desc" id="home">
+        <p class="ani-1">Attention to detail</p>
+        <p class="ani-2">Problem solving</p>
+        <p class="ani-3">Team collaboration</p>
+      </div>
+      <div class="header-text">
+        <div class="typing-container">
+          <h1 class="type-container">
+            Hi, I'm <span class="type-text"></span><br />Front-end developer.
+          </h1>
         </div>
-        <div class="about-col2">
-          <h3 class="sub-title about-title">About Me</h3>
-          <p class="about-text"> I am Ukandie Sunday, a passionate and dedicated  front end developer offering expertise in designing and implementing highly functional and responsive websites.<br>My goal and delight is to ensure that my works are placed at the cutting egde of front end development. <br>I am adept in resolving technical issues, while utilizing best practices and new technologies to craft engaging and visually appealing user interfaces that have intuitive and seamless user experience.
-          </p>
+        <p class="intro">
+          I articulate creativity with code to craft engaging user interfaces.
+        </p>
+      </div>
+      <div class="perspective">
+        <div class="shape"></div>
+      </div>
+    </header>
+    <!---------About------------>
+    <div id="about">
+      <div class="container">
+        <div class="flex-container abt-container" id="js-flex-container">
+          <div class="about-col1">
+            <img src="images/ukandie2.jpg" width="300" height="300" />
+          </div>
+          <div class="about-col2">
+            <h3 class="sub-title about-title">About Me</h3>
+            <p class="about-text">
+              I am Ukandie Sunday, a passionate and dedicated front end
+              developer offering expertise in designing and implementing highly
+              functional and responsive websites.<br />My goal and delight is to
+              ensure that my works are placed at the cutting egde of front end
+              development. <br />I am adept in resolving technical issues, while
+              utilizing best practices and new technologies to craft engaging
+              and visually appealing user interfaces that have intuitive and
+              seamless user experience.
+            </p>
             <div class="js-about about2">
-              <button class="links active-link" data-id="skills">My Skills</button>
+              <button class="links active-link" data-id="skills">
+                My Skills
+              </button>
               <button class="links" data-id="education">Education</button>
-            <div class="content-container">
-              <div class="contents active-content" id="skills">
-                <div class="skill-grid">
-                  <p><i class="fa-brands fa-html5"></i>HTML</p>
-                  <p><i class="fa-brands fa-css3"></i>CSS Tailwind</p>
-                  <p><i class="fa-brands fa-square-js"></i>Javascript (ES6+)</p>
-                  <p><i class="fa-brands fa-react"></i>React JS</p>
-                  <p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
-                  <p><i class="fa-brands fa-github"></i>Git and gitHub</p>
+              <div class="content-container">
+                <div class="contents active-content" id="skills">
+                  <div class="skill-grid">
+                    <p><i class="fa-brands fa-html5"></i>HTML</p>
+                    <p><i class="fa-brands fa-css3"></i>CSS Tailwind</p>
+                    <p>
+                      <i class="fa-brands fa-square-js"></i>Javascript (ES6+)
+                    </p>
+                    <p><i class="fa-brands fa-react"></i>React JS</p>
+                    <p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
+                    <p><i class="fa-brands fa-github"></i>Git and gitHub</p>
+                  </div>
+                </div>
+                <div class="contents" id="education">
+                  <p class="p">
+                    <span>Graduate of Accounting and Information Systems</span
+                    ><br />
+                  </p>
+                  <p class="p">
+                    <span>Currently pursuing Soft Ware Enginneering</span
+                    ><br />At College of Technology Akwa Ibom State
+                  </p>
                 </div>
               </div>
-              <div class="contents" id="education">
-                  <p class="p"><span>Graduate of Accounting and Information Systems</span><br></p>
-                  <p class="p"><span>Currently pursuing Soft Ware Enginneering</span><br>At College of Technology Akwa Ibom State</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------Services----------------------->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title service-title">My Services</h2>
+        <div class="service-grid">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2><span>Web</span> Design</h2>
+            <p>
+              Web Development: Building a functional and responsive visual
+              aspect of website using HTML, CSS and Javascript.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2><span>App</span> Design</h2>
+            <p>
+              Cross-Platform Design: Designing and building for multiple
+              platforms, such as iOS and Androids, while maintaining a
+              consistent user experience.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2><span>UI/UX</span> Design</h2>
+            <p>
+              Designing the look and feel of the website, including layouts,
+              colours, typography, and graphical elements to ensure intuitive
+              and satisfying user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------projects----------------->
+    <div id="project">
+      <div class="container">
+        <h3 class="sub-title work-title">Projects</h3>
+        <div class="project-grid">
+          <div class="project-grid-col">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <img src="images/study-table.webp" width="200" height="200" />
+              <a href="https://ukandie-shop.vercel.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="items">
+              <h4>E-commmerce App</h4>
+              <p>
+                Html, Css and Javascript.<br />This website makes you shop round
+                the clock with diverse functionalities.
+              </p>
+            </div>
+          </div>
+          <div class="project-grid-col">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <img src="images/study-table.webp" width="200" height="200" />
+              <a href="https://ukandie-furniture.vercel.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="items">
+              <h4>Furniture website</h4>
+              <p>
+                Html, Css and Javascript.<br />See products and services,
+                factory layout and book projects for assembly.
+              </p>
+            </div>
+          </div>
+          <div class="project-grid-col">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <img src="images/study-table.webp" width="200" height="200" />
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div class="items">
+              <h4>Restaurant App</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+                eius.
+              </p>
+            </div>
+          </div>
+          <div class="project-grid-col">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <img src="images/study-table.webp" width="200" height="200" />
+            </div>
+
+            <div class="items">
+              <h4>Fintech App</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-grid-col">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <img src="images/study-table.webp" width="200" height="200" />
+            </div>
+            <div class="items">
+              <h4>Real Estate Website</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------Contact------------------>
+    <div id="contact">
+      <div class="contact-container">
+        <div class="flex-container">
+          <div class="contact-col1">
+            <h3 class="sub-title contact-title">Contact Me</h3>
+            <p class="contact-text">
+              Yes i'm at your service,<br />
+              contact me to unleash my amazing front-end skills to create
+              awesome and interactive user interfaces for your business.
+            </p>
+          </div>
+          <div class="contact-col2">
+            <div class="grid-col2">
+              <div class="details">
+                <a target="blank" href="tel:2349137347328">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>Call Me On</p>
+                  <p>+2349137347328</p>
+                </a>
+              </div>
+              <div class="details">
+                <a target="blank" href="mailto:ukandieudo202@gmail.com">
+                  <i class="fa-regular fa-paper-plane"></i>
+                  <p>Send Me a Mail</p>
+                  <p class="som">ukandieudo202@gmail.com</p>
+                </a>
+              </div>
+              <div class="details">
+                <a target="blank" href="https://wa.me/+2349078512087">
+                  <i class="fa-brands fa-square-whatsapp"></i>
+                  <p>WhatsApp Me</p>
+                </a>
+              </div>
+              <div class="cv">
+                <a target="blank" href="RESUME-Uka.pdf" download
+                  >Download My CV</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-----------------Services----------------------->
-  <div id="services">
-    <div class="container">
-      <h2 class="sub-title service-title">My Services</h2>
-      <div class="service-grid">
-        <div>
-        <i class="fa-solid fa-code"></i>
-        <h2><span>Web</span> Design</h2>
-        <p>Web Development: Building a functional and responsive  visual aspect of  website using HTML, CSS and Javascript.</p>
-        </div>
-        <div>
-        <i class="fa-brands fa-app-store-ios"></i>
-        <h2><span>App</span> Design</h2>
-        <p>Cross-Platform Design:
-          Designing and building for multiple platforms, such as iOS and Androids, while maintaining a consistent user experience.</p>
-        </div>
-        <div>
-        <i class="fa-solid fa-crop"></i>
-        <h2> <span>UI/UX</span> Design</h2>
-        <p>Designing the look and feel of the website, including layouts, colours, typography, and graphical elements to ensure intuitive and satisfying user experience.</p>
-        </div>
+    <div class="link-2"><i class="fa-solid fa-angle-up"></i></div>
+    <div id="footer">
+      <div class="footer">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/ukandie-sunday-139612298"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <p id="copy">&copy; Ukandie Sunday <span class="span"></span></p>
       </div>
     </div>
-  </div>
-  <!--------------projects----------------->
-  <div id="project">
-    <div class="container">
-      <h3 class="sub-title work-title">Projects</h3>
-      <div class="project-grid">
-        <div class="project-grid-col">
-          <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="images/study-table.webp" width="200" height="200">
-            <a href="https://ukandie-shop.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-          <div class="items">
-            <h4>E-commmerce App</h4>
-            <p>Html, Css and Javascript.<br>This website makes you shop round the clock with diverse functionalities.</p>
-          </div>
-        </div>
-        <div class="project-grid-col">
-          <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="images/study-table.webp" width="200" height="200">
-            <a href="https://ukandie-furniture.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-          <div class="items">
-            <h4>Furniture website</h4>
-            <p>Html, Css and Javascript.<br>See products and services, factory layout and book projects for assembly.</p>
-          
-          </div>
-        </div>
-        <div class="project-grid-col">
-          <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="images/study-table.webp" width="200" height="200">
-            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-          <div class="items">
-            <h4>Restaurant App</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eius.</p> 
-          </div>
-        </div>
-        <div class="project-grid-col">
-          <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="images/study-table.webp" width="200" height="200">
-          </div>
-          
-          <div class="items">
-            <h4>Fintech App</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project-grid-col">
-          <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="images/study-table.webp" width="200" height="200">
-          </div>
-          <div class="items">
-            <h4>Real Estate Website</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!----------------Contact------------------>
-  <div id="contact">
-    <div class="contact-container">
-      <div class="flex-container">
-        <div class="contact-col1">
-          <h3 class="sub-title contact-title">Contact Me</h3>
-          <p class="contact-text">Yes i'm at your service,<br> contact me to unleash my amazing front-end skills to create awesome and interactive user interfaces for your business.</p>
-        </div>
-        <div class="contact-col2">
-          <div class="grid-col2">
-            <div class="details">
-              <a target="blank" href="tel:2349137347328">
-                <i class="fa-solid fa-phone"></i>
-                <p>Call Me On</p>
-                <p>+2349137347328</p>
-                </a>
-            </div>
-           <div  class="details">
-            <a  target="blank" href="mailto:ukandieudo202@gmail.com">
-              <i class="fa-regular fa-paper-plane"></i>
-              <p>Send Me a Mail</p>
-              <p class="som">ukandieudo202@gmail.com</p>
-          </a>
-           </div>
-           <div  class="details">
-            <a  target="blank" href="https://wa.me/+2349078512087">
-              <i class="fa-brands fa-square-whatsapp"></i>
-              <p>WhatsApp Me</p>
-            </a>
-           </div>
-           <div class="cv">
-            <a  target="blank" href="RESUME-Uka.pdf" download >Download My CV</a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="link-2"><i class="fa-solid fa-angle-up"></i></div>
-  <div id="footer">
-    <div class="footer">
-      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/ukandie-sunday-139612298"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <p id="copy"><b> ukandieSunday</b> &copy;<span class="span"></span></p>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="scripts/app.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
