@@ -40,23 +40,53 @@
           </div>
         </nav>
       </div>
-      <div class="header-desc" id="home">
-        <p class="ani-1">Attention to detail</p>
-        <p class="ani-2">Problem solving</p>
-        <p class="ani-3">Team collaboration</p>
-      </div>
-      <div class="header-text">
-        <div class="typing-container">
-          <h1 class="type-container">
-            Hi, I'm <span class="type-text"></span><br />Front-end developer.
-          </h1>
+
+      <div class="header-flex">
+        <div class="header-left">
+          <div class="typing-container">
+            <h1 class="type-container">
+              Hi, I'm <span class="type-text"></span><br />
+            </h1>
+            <div class="intro">
+              I articulate creativity with code to craft scalable and engaging
+              user interfaces. I'm always open to your service, hire me and see
+              my skills in action.
+            </div>
+          </div>
+          <h4>
+            Let's connect <i class="fa-solid fa-arrow-down" id="arrow"></i>
+          </h4>
+          <div class="btn-flex">
+            <a href="mailto:ukandieudo202@gmail.com">
+              <button class="btn">Hire Me</button>
+            </a>
+            <button class="cv">
+              <a target="_blank" href="images/ukandie-resume.pdf" download
+                >Download My CV</a
+              >
+            </button>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://wa.me/+2349078512087">
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ukandie-sunday-139612298"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </div>
-        <p class="intro">
-          I articulate creativity with code to craft engaging user interfaces.
-        </p>
-      </div>
-      <div class="perspective">
-        <div class="shape"></div>
+
+        <div class="header-right">
+          <div class="img-container">
+            <img class="img" src="images/ukandie2.jpg" />
+          </div>
+          <div class="header-desc" id="home">
+            <p>Attention to detail.</p>
+            <p>Problem solving.</p>
+            <p>Team collaboration.</p>
+          </div>
+        </div>
       </div>
     </header>
     <!---------About------------>
@@ -64,7 +94,12 @@
       <div class="container">
         <div class="flex-container abt-container" id="js-flex-container">
           <div class="about-col1">
-            <img src="images/ukandie2.jpg" width="300" height="300" />
+            <img
+              class="img"
+              src="images/ukandie2.jpg"
+              width="300"
+              height="300"
+            />
           </div>
           <div class="about-col2">
             <h3 class="sub-title about-title">About Me</h3>
@@ -72,7 +107,7 @@
               I am Ukandie Sunday, a passionate and dedicated front end
               developer offering expertise in designing and implementing highly
               functional and responsive websites.<br />My goal and delight is to
-              ensure that my works are placed at the cutting egde of front end
+              ensure that my works are placed at the cutting edge of front end
               development. <br />I am adept in resolving technical issues, while
               utilizing best practices and new technologies to craft engaging
               and visually appealing user interfaces that have intuitive and
@@ -87,12 +122,13 @@
                 <div class="contents active-content" id="skills">
                   <div class="skill-grid">
                     <p><i class="fa-brands fa-html5"></i>HTML</p>
-                    <p><i class="fa-brands fa-css3"></i>SASS</p>
+                    <p><i class="fa-brands fa-css3"></i>CSS</p>
                     <p>
                       <i class="fa-brands fa-square-js"></i>Javascript (ES6+)
                     </p>
                     <p><i class="fa-brands fa-react"></i>React JS</p>
-                    <p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
+                    <p id="sass">SASS</p>
+                    <p><i class="fa-brands fa-bootstrap"></i> WordPress</p>
                     <p><i class="fa-brands fa-github"></i>Git and gitHub</p>
                   </div>
                 </div>
@@ -102,7 +138,7 @@
                     ><br />
                   </p>
                   <p class="p">
-                    <span>Currently pursuing Soft Ware Enginneering</span
+                    <span>Currently pursuing Soft Ware Engineering</span
                     ><br />At College of Technology Akwa Ibom State
                   </p>
                 </div>
@@ -116,13 +152,20 @@
     <div id="services">
       <div class="container">
         <h2 class="sub-title service-title">My Services</h2>
-        <div class="service-grid">
+        <div class="service-details">
+          <p>
+            I create dynamic and fully functional user interfaces, update <br />
+            existing code to its lifeline, integrate backend APIs to front end
+            works and lots more.
+          </p>
+        </div>
+        <div class="service-grid" id="target-container">
           <div>
             <i class="fa-solid fa-code"></i>
             <h2><span>Web</span> Design</h2>
             <p>
-              Web Development: I build a functional and responsive visual aspect
-              of website using HTML, CSS and Javascript.
+              I design and build functional and responsive visual aspect of
+              websites using HTML, CSS, Javascript and React JS.
             </p>
           </div>
           <div>
@@ -149,11 +192,10 @@
     <!--------------projects----------------->
     <div id="project">
       <div class="container">
-        <h3 class="sub-title work-title">Projects</h3>
+        <h3 class="sub-title work-title">My Projects</h3>
         <div class="project-grid">
           <div class="project-grid-col">
             <div>
-              <i class="fa-regular fa-heart"></i>
               <img src="images/study-table.webp" width="200" height="200" />
               <a href="https://ukandie-shop.vercel.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
@@ -169,7 +211,6 @@
           </div>
           <div class="project-grid-col">
             <div>
-              <i class="fa-regular fa-heart"></i>
               <img src="images/study-table.webp" width="200" height="200" />
               <a href="https://ukandie-furniture.vercel.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
@@ -185,7 +226,6 @@
           </div>
           <div class="project-grid-col">
             <div>
-              <i class="fa-regular fa-heart"></i>
               <img src="images/study-table.webp" width="200" height="200" />
               <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
@@ -199,7 +239,6 @@
           </div>
           <div class="project-grid-col">
             <div>
-              <i class="fa-regular fa-heart"></i>
               <img src="images/study-table.webp" width="200" height="200" />
             </div>
 
@@ -211,7 +250,6 @@
           </div>
           <div class="project-grid-col">
             <div>
-              <i class="fa-regular fa-heart"></i>
               <img src="images/study-table.webp" width="200" height="200" />
             </div>
             <div class="items">
@@ -229,11 +267,17 @@
         <div class="flex-container">
           <div class="contact-col1">
             <h3 class="sub-title contact-title">Contact Me</h3>
-            <p class="contact-text">
-              Yes i'm at your service,<br />
-              contact me to unleash my amazing front-end skills to create
-              awesome and interactive user interfaces for your business.
-            </p>
+            <form class="form" action="">
+              <input type="text" placeholder="Full name" required />
+              <input type="email" placeholder="Your email..." required />
+              <input type="text" placeholder="Phone no." required />
+              <textarea
+                rows="6"
+                placeholder="Send a message..."
+                required
+              ></textarea>
+              <button type="submit" class="btn" id="form-btn">send</button>
+            </form>
           </div>
           <div class="contact-col2">
             <div class="grid-col2">
@@ -245,22 +289,17 @@
                 </a>
               </div>
               <div class="details">
-                <a target="blank" href="mailto:ukandieudo202@gmail.com">
+                <a target="_blank" href="mailto:ukandieudo202@gmail.com">
                   <i class="fa-regular fa-paper-plane"></i>
                   <p>Send Me a Mail</p>
                   <p class="som">ukandieudo202@gmail.com</p>
                 </a>
               </div>
               <div class="details">
-                <a target="blank" href="https://wa.me/+2349078512087">
+                <a target="_blank" href="https://wa.me/+2349078512087">
                   <i class="fa-brands fa-square-whatsapp"></i>
                   <p>WhatsApp Me</p>
                 </a>
-              </div>
-              <div class="cv">
-                <a target="blank" href="images/ukandie-resume.pdf" download
-                  >Download My CV</a
-                >
               </div>
             </div>
           </div>
@@ -270,12 +309,9 @@
     <div class="link-2"><i class="fa-solid fa-angle-up"></i></div>
     <div id="footer">
       <div class="footer">
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/ukandie-sunday-139612298"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <p id="copy">&copy; Ukandie Sunday <span class="span"></span></p>
+        <p id="copy">
+          &copy;copy right Ukandie Sunday <span class="span"></span>
+        </p>
       </div>
     </div>
     <script

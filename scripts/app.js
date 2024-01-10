@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
 });
 
 //Auto type text
-const textToType = "Ukandie Sunday,";
+const textToType = "Ukandie Sunday, frontend react js developer.";
 const textElem = document.querySelector(".type-text");
 let index = 0;
 const typeText = () => {
@@ -47,16 +47,17 @@ const typeText = () => {
     setTimeout(typeText, 350);
   }
 };
+// To scale profile image on page load
+const ukaImg = document.querySelector(".img");
+function handleImgScale() {
+  ukaImg.classList.add("scale-img");
+}
 
 //Adds hero section introduction
 window.addEventListener("DOMContentLoaded", () => {
+  handleImgScale();
   typeText();
 });
-
-setTimeout(() => {
-  const intro = document.querySelector(".intro");
-  intro.classList.add("intro-display");
-}, 5000);
 
 const fixedNav = document.querySelector(".fixed-nav");
 const topLink = document.querySelector(".link-2");
@@ -99,6 +100,15 @@ window.onscroll = function () {
   scrollHeight2 >= 3900
     ? contactTitle.classList.add("show-contact-t")
     : contactTitle.classList.remove("show-contact-t");
+
+  //To scroll to service container
+  const targetContainer = document.getElementById("target-container");
+  const containerTop = targetContainer.getBoundingClientRect().top;
+
+  const isContainerVisible = containerTop < window.innerHeight / 2;
+  isContainerVisible
+    ? targetContainer.classList.add("display-service")
+    : targetContainer.classList.remove("display-service");
 };
 
 //To show remove preloader
