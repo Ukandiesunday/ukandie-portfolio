@@ -14,8 +14,6 @@ body {
 header {
   width: 100%;
   min-height: 100vh;
-  /* background:linear-gradient(rgba(0, 0, 0,0.5),
-  rgb(0,0,30,0.2)); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,7 +218,9 @@ h3 span {
   border: 0;
   cursor: pointer;
   padding: 8px;
-  background-color: #f6ebe3;
+  color: #fc700c;
+  background-color: transparent;
+  border: 2px solid #ea6405;
   font-weight: 500;
   font-size: 18px;
   border-radius: 20px;
@@ -268,7 +268,9 @@ h3 span {
   font-size: 15px;
   margin-top: 3px;
 }
-
+.header-desc {
+  margin-top: 6px;
+}
 .intro {
   margin: 20px 0;
   width: 70%;
@@ -288,7 +290,6 @@ h3 span {
   height: 35px;
   border: 2px solid #ea6405;
   border-radius: 50%;
-  /* background: rgb(223, 206, 206); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,7 +307,7 @@ h3 span {
 
 .cv a {
   text-decoration: none;
-  color: rgb(22, 22, 22);
+  color: #fc700c;
   font-size: 16px;
   text-wrap: nowrap;
 }
