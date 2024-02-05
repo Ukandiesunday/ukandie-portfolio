@@ -18,7 +18,10 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 .preloader {
   position: fixed;
   top: 0;
