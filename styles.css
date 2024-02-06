@@ -124,7 +124,7 @@ a {
   top: -100px;
 }
 .theme :is(.fixed-nav, .footer-container) {
-  background-color: rgb(217, 213, 213);
+  background-color: white;
 }
 
 .fixed-nav.show-nav {
@@ -784,9 +784,9 @@ input {
     display: flex;
     flex-wrap: wrap;
   }
-  #sass {
+  /* #sass {
     margin-left: 13px;
-  }
+  } */
   .contact-col1 {
     flex-basis: 100%;
   }
@@ -863,7 +863,9 @@ input {
   .header-left h1 {
     font-size: 30px;
   }
-
+  .p1 {
+    padding-left: 10px;
+  }
   .service-grid p {
     font-size: 14px;
   }
