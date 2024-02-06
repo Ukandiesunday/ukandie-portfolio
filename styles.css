@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
   position: relative;
 }
+.theme {
+  background-color: rgb(26, 24, 24);
+  color: rgb(209, 202, 202);
+}
 header {
   width: 100%;
   min-height: 100vh;
@@ -119,6 +123,9 @@ a {
   transition: top 1s;
   top: -100px;
 }
+.theme :is(.fixed-nav, .footer-container) {
+  background-color: rgb(217, 213, 213);
+}
 
 .fixed-nav.show-nav {
   position: fixed;
@@ -143,6 +150,7 @@ ul {
 .fixed-nav ul li {
   display: inline-block;
   margin-inline: 10px;
+  font-weight: 500;
 }
 
 ul a {
@@ -166,14 +174,13 @@ ul a:hover::after {
   width: 100%;
   border-radius: 10px;
 }
-ul a:hover {
-  color: #ea6405;
-}
+
 .logo {
   font-size: 23px;
   display: inline;
   position: relative;
   z-index: 3;
+  color: black;
 }
 
 h3 span {
@@ -297,6 +304,7 @@ h3 span {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  background-color: #efefef;
 }
 
 .btn:hover {
@@ -316,10 +324,11 @@ h3 span {
 }
 
 /* -------------About-------------- */
-#about {
+.about {
   background: #efefef;
   padding: 60px 10px;
 }
+
 @media (max-width: 768px) {
   .about-title,
   .service-title,
@@ -475,13 +484,15 @@ h3 span {
 }
 .service-grid div {
   padding: 20px;
-  /* background-color: rgb(221, 199, 160); */
   background-color: #e5e4e4;
   border-radius: 10px;
   box-shadow: 0 0 2px rgb(22, 22, 22);
   transition: all 0.5s;
   color: black;
   text-align: center;
+}
+.theme :is(.service-grid div, .items, .details, input, textarea) {
+  background-color: #9f9999;
 }
 .service-grid div:hover {
   background-color: rgb(221, 199, 160);
@@ -511,6 +522,9 @@ h2 {
 .fa-crop {
   color: #ea6405;
   font-size: 25px;
+}
+.details i {
+  color: #ea6405;
 }
 /* -------------Projects------------------ */
 #project {
@@ -565,11 +579,14 @@ h2 {
   color: black;
   letter-spacing: 1px;
   font-size: 15px;
-  background-color: rgb(221, 199, 160);
+  background-color: #e5e4e4;
   line-height: 20px;
   position: absolute;
   top: 50%;
   bottom: 0;
+}
+.theme :is(.contact, .about) {
+  background-color: rgb(26, 24, 24);
 }
 
 .items h4 {
@@ -580,7 +597,7 @@ h2 {
 }
 
 /* ---------------Contact-------------------- */
-#contact {
+.contact {
   background: #efefef;
   padding: 60px 0;
 }
@@ -606,6 +623,9 @@ textarea {
 }
 :is(input, textarea):focus {
   outline: none;
+}
+:is(input, textarea)::placeholder {
+  color: rgb(35, 34, 34);
 }
 
 input {
@@ -652,6 +672,26 @@ input {
 .fa-phone {
   color: #ea6405;
 }
+.theme-btn {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 30px;
+}
+.theme .theme-btn span {
+  transform: translateX(20px);
+  transition: all 0.3s;
+}
+.theme-btn span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
 
 .fa-brands,
 .fa-regular,
@@ -672,7 +712,7 @@ input {
 }
 
 .details p {
-  color: #ea6405;
+  color: rgb(38, 36, 36);
 }
 .link-2 {
   position: fixed;
@@ -693,7 +733,7 @@ input {
   opacity: 1;
 }
 
-#footer {
+.footer-container {
   padding: 30px 0;
   text-align: center;
   background: rgb(221, 199, 160);
@@ -704,10 +744,6 @@ input {
   font-size: 15px;
   font-weight: 500;
   margin-top: 10px;
-}
-
-#footer span {
-  color: red;
 }
 
 /* ------------media query for mobile devices ---------------- */

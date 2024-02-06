@@ -44,7 +44,7 @@ const typeText = () => {
   if (index < textToType.length) {
     textElem.innerHTML += textToType.charAt(index);
     index++;
-    setTimeout(typeText, 350);
+    setTimeout(typeText, 220);
   }
 };
 // To scale profile image on page load
@@ -110,7 +110,12 @@ window.onscroll = function () {
     ? targetContainer.classList.add("display-service")
     : targetContainer.classList.remove("display-service");
 };
-
+// To toggle dark and light mode
+const theme = document.querySelector(".toggle-theme");
+theme.addEventListener("click", () => {
+  document.body.classList.toggle("theme");
+  document.documentElement.classList.toggle("theme");
+});
 //To show remove preloader
 const preloader = document.querySelector(".preloader");
 window.onload = function () {
