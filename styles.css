@@ -230,7 +230,7 @@ h3 span {
   padding: 8px;
   color: #fc700c;
   background-color: transparent;
-  border: 2px solid #ea6405;
+  border: 1px solid #ea6405;
   font-weight: 500;
   font-size: 18px;
   border-radius: 20px;
@@ -405,7 +405,7 @@ h3 span {
   margin: 0 20px 7px 0;
   font-size: 17px;
   padding: 8px;
-  background-color: #dcb9a1;
+  background-color: white;
   border-radius: 20px;
   transition: all 0.5s;
   border: none;
@@ -467,7 +467,7 @@ h3 span {
   margin-top: 10px;
   opacity: 0;
 
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 .service-grid.display-service {
   opacity: 1;
@@ -483,16 +483,16 @@ h3 span {
   margin-left: 150px;
 }
 .service-grid div {
-  padding: 20px;
-  background-color: #e5e4e4;
+  padding: 10px 20px;
+  background-color: #efefef;
   border-radius: 10px;
-  box-shadow: 0 0 2px rgb(22, 22, 22);
+  border: 1px solid grey;
   transition: all 0.5s;
   color: black;
   text-align: center;
 }
 .theme :is(.service-grid div, .items, .details, input, textarea) {
-  background-color: #9f9999;
+  background-color: #837d7d;
 }
 .service-grid div:hover {
   background-color: rgb(221, 199, 160);
@@ -534,56 +534,69 @@ h2 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 35px;
+  grid-gap: 30px;
 }
 .project-grid-col img {
   width: 100%;
-  display: block;
+  height: 100%;
   object-fit: cover;
 }
-
-.project-grid-col:hover {
-  transform: scale(1.05);
+.project-container p {
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  padding: 17px 5px;
+  margin-top: -7px;
+  background-color: #efefef;
 }
+
 .project-grid-col {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 10px;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
   color: black;
   padding: 20px auto;
-  overflow: hidden;
-  transition: transform 0.5s;
+  border: 1px solid grey;
+}
+.project-container {
+  position: relative;
+}
+.project-container:hover .items {
+  height: 100%;
+  background-color: #efefef;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 1s ease-in;
 }
 
-.fa-heart {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: #ea6405;
-  z-index: 5;
-}
 .fa-up-right-from-square {
   position: absolute;
   z-index: 5;
   bottom: 15px;
   left: 3%;
-  color: white;
+  color: #ea6405;
 }
 .items {
-  margin: 0 auto;
   width: 100%;
-  padding-inline: 15px;
+  height: 0;
+  padding: 5px 5%;
   text-align: center;
   color: black;
   letter-spacing: 1px;
   font-size: 15px;
-  background-color: #e5e4e4;
+  /* background-color: #e5e4e4; */
+  background-color: #efefef;
   line-height: 20px;
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
+  transition: all 2s ease-in;
+  z-index: -2;
 }
 .theme :is(.contact, .about) {
   background-color: rgb(26, 24, 24);
@@ -784,9 +797,7 @@ input {
     display: flex;
     flex-wrap: wrap;
   }
-  /* #sass {
-    margin-left: 13px;
-  } */
+
   .contact-col1 {
     flex-basis: 100%;
   }
@@ -848,6 +859,9 @@ input {
     justify-content: center;
     flex-basis: 100%;
     position: relative;
+  }
+  .items {
+    padding: 10% 10%;
   }
   .header-left {
     flex-basis: 100%;
