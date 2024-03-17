@@ -237,11 +237,11 @@ h3 span {
 }
 
 .img {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: block;
   object-fit: cover;
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   transition: all 2.3s;
 }
@@ -266,17 +266,17 @@ h3 span {
 }
 .header-right {
   margin-top: 15px;
-  flex-basis: 25%;
+  flex-basis: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .header-desc p {
   font-weight: 500;
   font-size: 15px;
-  margin-top: 3px;
+  margin-top: 7px;
 }
 .header-desc {
   margin-top: 6px;
@@ -285,6 +285,7 @@ h3 span {
   margin: 20px 0;
   width: 70%;
   font-weight: 500;
+  line-height: 24px;
 }
 
 .icons {
@@ -381,7 +382,7 @@ h3 span {
 }
 .about-text {
   padding-bottom: 20px;
-  line-height: 26px;
+  line-height: 27px;
   font-size: 16px;
   padding-right: 10px;
 }
@@ -447,7 +448,8 @@ h3 span {
   grid-gap: 10px;
 }
 .skill-grid p {
-  margin-top: 10px;
+  margin-top: 15px;
+  text-wrap: nowrap;
 }
 .contents {
   display: none;
@@ -464,7 +466,7 @@ h3 span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   opacity: 0;
 
   transition: all 1s ease;
@@ -476,6 +478,7 @@ h3 span {
 
 .service-details p {
   margin-bottom: 45px;
+  line-height: 27px;
 }
 .service-details i {
   color: #ea6405;
