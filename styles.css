@@ -7,12 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: black;
+  color: rgb(136, 133, 133);
   font-family: "Roboto", sans-serif;
   position: relative;
 }
 .theme {
-  background-color: rgb(26, 24, 24);
+  background-color: #1c1e26;
   color: rgb(209, 202, 202);
 }
 header {
@@ -24,7 +24,7 @@ header {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(82, 78, 78);
 }
 .preloader {
   position: fixed;
@@ -32,7 +32,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #ea6405;
+  background: rgb(221, 199, 160);
   z-index: 999;
 }
 .content {
@@ -76,7 +76,7 @@ a {
   padding-inline: 4px;
   padding-block: 7px;
   border-radius: 5px;
-  border: 2px solid #c45508;
+  border: px solid rgb(221, 199, 160);
   z-index: 3;
   cursor: pointer;
   transition: border 0.3s;
@@ -86,24 +86,25 @@ a {
 .menu-btn::after,
 .menu-btn::before {
   position: absolute;
-  width: 40px;
-  height: 5px;
+  width: 35px;
+  height: 4px;
   border-radius: 10px;
-  background-color: #c45508;
+  background-color: bl;
   transition: all 0.5s;
   left: 50%;
   top: 50%;
+  background-color: rgb(123, 120, 120);
   transform: translate(-50%, -50%);
 }
 .menu-btn::before {
   content: "";
-  background-color: #c45508;
+  background-color: rgb(123, 120, 120);
   transform: translate(-20px, -12px);
 }
 .menu-btn::after {
   content: "";
   transform: translate(-20px, 9px);
-  background-color: #c45508;
+  background-color: rgb(132, 126, 126);
 }
 
 .toggle-icon .menu-btn::before {
@@ -117,19 +118,27 @@ a {
 }
 
 .fixed-nav {
-  background: rgb(221, 199, 160);
+  background: white;
   padding: 19px 10%;
   width: 100%;
   transition: top 1s;
   top: -100px;
+
+  box-shadow: 0px 2.5px 2px rgb(241, 240, 240);
 }
-.theme :is(.fixed-nav, .footer-container) {
-  background-color: white;
+.theme :is(.footer-container) {
+  background-color: rgb(19, 18, 18);
+  color: rgb(160, 157, 157);
+}
+.theme .fixed-nav {
+  background-color: #1c1e26;
+  box-shadow: 0px 1px 1px rgb(106, 103, 103);
+  color: rgb(209, 202, 202);
 }
 
 .fixed-nav.show-nav {
   position: fixed;
-  box-shadow: 0 2px 0 rgb(22, 22, 22);
+
   z-index: 50;
   top: 0;
   left: 0;
@@ -156,7 +165,7 @@ ul {
 ul a {
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: rgb(169, 165, 165);
   position: relative;
   transition: all 0.5s;
 }
@@ -164,7 +173,7 @@ ul a::after {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #c45508;
+  background-color: #fc700c;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -180,15 +189,15 @@ ul a:hover::after {
   display: inline;
   position: relative;
   z-index: 3;
-  color: black;
+  color: rgb(169, 165, 165);
 }
 
 h3 span {
-  color: #ea6405;
+  color: #fc700c;
 }
 
 .underline {
-  background-color: #ea6405;
+  background-color: #fc700c;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -201,7 +210,7 @@ h3 span {
   width: 50%;
   bottom: -7px;
   left: 0;
-  background-color: #ea6405;
+  background-color: #fc700c;
   height: 3px;
   position: absolute;
   border-radius: 10px;
@@ -211,7 +220,7 @@ h3 span {
   font-size: 40px;
 }
 .header-left h1 span {
-  color: #c45508;
+  color: #f88838;
 }
 .btn-flex {
   margin-top: 10px;
@@ -220,7 +229,7 @@ h3 span {
   gap: 30px;
 }
 #arrow {
-  font-size: 23px;
+  font-size: 18px;
   padding-left: 20px;
 }
 .btn,
@@ -228,9 +237,9 @@ h3 span {
   border: 0;
   cursor: pointer;
   padding: 8px;
-  color: #fc700c;
-  background-color: transparent;
-  border: 1px solid #ea6405;
+  color: #f67e29;
+  background-color: #ffff;
+  border: 2px solid #f67e29;
   font-weight: 500;
   font-size: 18px;
   border-radius: 20px;
@@ -299,13 +308,13 @@ h3 span {
 .icons a {
   width: 35px;
   height: 35px;
-  border: 2px solid #ea6405;
+  border: 1.5px solid #fc700c;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #efefef;
+  background-color: white;
 }
 
 .btn:hover {
@@ -326,8 +335,11 @@ h3 span {
 
 /* -------------About-------------- */
 .about {
-  background: #efefef;
   padding: 60px 10px;
+}
+.theme :is(.about, .contact) {
+  background-color: #1c1e26 !important;
+  color: rgb(209, 202, 202) !important;
 }
 
 @media (max-width: 768px) {
@@ -372,13 +384,13 @@ h3 span {
   height: fit-content;
 }
 .fa-github {
-  color: black;
+  color: rgb(171, 168, 168);
 }
 .sub-title {
   padding-bottom: 10px;
   font-size: 40px;
   font-weight: 600;
-  color: #ea6405;
+  color: #f88838;
 }
 .about-text {
   padding-bottom: 20px;
@@ -387,26 +399,26 @@ h3 span {
   padding-right: 10px;
 }
 .fa-react {
-  color: darkcyan;
+  color: darkcyan !important;
 }
 .fa-css3 {
-  color: lightseagreen;
+  color: lightseagreen !important;
 }
 .fa-html5 {
-  color: #ea6405;
+  color: #f88838 !important;
 }
 .fa-square-js {
-  color: #ea6405;
+  color: #f88838 !important;
 }
 .skill-grid .fa-github {
-  color: black;
+  color: rgb(148, 144, 144);
 }
 .links {
   white-space: nowrap;
   margin: 0 20px 7px 0;
   font-size: 17px;
   padding: 8px;
-  background-color: white;
+  background-color: rgb(241, 239, 239);
   border-radius: 20px;
   transition: all 0.5s;
   border: none;
@@ -418,7 +430,7 @@ h3 span {
 
 .links.active-link {
   color: white;
-  background-color: #ea6405;
+  background-color: #f88838;
 }
 
 @keyframes bounce {
@@ -466,14 +478,8 @@ h3 span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
-  margin-top: 20px;
-  opacity: 0;
-
-  transition: all 1s ease;
-}
-.service-grid.display-service {
+  margin-top: 10px;
   opacity: 1;
-  transform: translateY(-30px);
 }
 
 .service-details p {
@@ -481,28 +487,28 @@ h3 span {
   line-height: 27px;
 }
 .service-details i {
-  color: #ea6405;
+  color: #f67416;
   font-size: 20px;
   margin-left: 150px;
 }
 .service-grid div {
   padding: 10px 20px;
-  background-color: #efefef;
+  background: #f3f1f1;
   border-radius: 10px;
   border: 1px solid grey;
   transition: all 0.5s;
-  color: black;
+  color: rgb(35, 34, 34);
   text-align: center;
 }
 .theme :is(.service-grid div, .items, .details, input, textarea) {
   background-color: #837d7d;
 }
 .service-grid div:hover {
-  background-color: rgb(221, 199, 160);
+  background-color: rgb(217, 211, 201);
 }
 
 h2 span {
-  color: #ea6405;
+  color: #f57113;
 }
 h2 {
   font-size: 25px;
@@ -523,8 +529,8 @@ h2 {
 .fa-app-store-ios,
 .fa-code,
 .fa-crop {
-  color: #ea6405;
-  font-size: 25px;
+  color: #ea6405 !important;
+  font-size: 30px !important;
 }
 .details i {
   color: #ea6405;
@@ -550,6 +556,7 @@ h2 {
   text-align: center;
   padding: 17px 5px;
   margin-top: -7px;
+  color: rgb(151, 148, 148);
   background-color: #efefef;
 }
 
@@ -568,7 +575,8 @@ h2 {
 }
 .project-container:hover .items {
   height: 100%;
-  background-color: #efefef;
+  background-color: #a7a2a2;
+  color: rgb(17, 16, 16);
   position: absolute;
   cursor: pointer;
   z-index: 2;
@@ -594,7 +602,7 @@ h2 {
   color: black;
   letter-spacing: 1px;
   font-size: 15px;
-  /* background-color: #e5e4e4; */
+
   background-color: #efefef;
   line-height: 20px;
   position: absolute;
@@ -617,7 +625,7 @@ h2 {
 
 /* ---------------Contact-------------------- */
 .contact {
-  background: #efefef;
+  background-color: #efefef;
   padding: 60px 0;
 }
 
@@ -637,7 +645,8 @@ textarea {
   border-radius: 5px;
   padding-left: 15px;
   border: none;
-  box-shadow: 0 0 2px rgb(22, 22, 22);
+  border: 1.5px solid rgb(216, 214, 214);
+  /* box-shadow: 0 0 2px rgb(22, 22, 22); */
   caret-color: red;
 }
 :is(input, textarea):focus {
@@ -717,27 +726,29 @@ input {
 .fa-solid {
   font-size: 20px;
   padding: 0 6px;
+  color: rgb(136, 133, 133);
 }
 
 .details {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  background-color: whitesmoke;
+  color: rgb(165, 163, 163);
+  background-color: #ffff;
   box-shadow: 0 0 7px 0 #ea64;
-  border: 2px dotted #ea6405;
+  border: 1.5px dotted rgb(216, 214, 214);
   border-left: none;
   border-top: none;
 }
 
 .details p {
-  color: rgb(38, 36, 36);
+  color: rgb(79, 77, 77);
 }
 .link-2 {
   position: fixed;
   right: 25px;
   bottom: 55px;
-  background-color: #ea6405;
+  background-color: #ed731c;
   padding: 3px;
   border-radius: 6px;
   animation: bounce 1s infinite linear;
@@ -755,7 +766,7 @@ input {
 .footer-container {
   padding: 30px 0;
   text-align: center;
-  background: rgb(221, 199, 160);
+  background: #ffff;
   color: black;
   font-weight: 500;
 }
@@ -774,7 +785,7 @@ input {
     position: fixed;
     width: 280px;
     height: 100vh;
-    background: rgb(221, 199, 160);
+    background: #ffff;
     z-index: 2;
     font-size: 18px;
     top: 0;
@@ -901,7 +912,7 @@ input {
   .fa-code,
   .fa-crop {
     color: #ea6405;
-    font-size: 25px;
+    font-size: 30px;
   }
   .intro,
   .type-container {

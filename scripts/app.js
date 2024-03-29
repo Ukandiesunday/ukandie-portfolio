@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
 });
 
 //Auto type text
-const textToType = "Ukandie Sunday, frontend react js developer.";
+const textToType = "Ukandie Sunday, frontend react, next js developer.";
 const textElem = document.querySelector(".type-text");
 let index = 0;
 const typeText = () => {
