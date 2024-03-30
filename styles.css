@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: rgb(136, 133, 133);
+  color: rgb(112, 108, 108);
   font-family: "Roboto", sans-serif;
   position: relative;
 }
@@ -24,7 +24,6 @@ header {
 }
 a {
   text-decoration: none;
-  color: rgb(82, 78, 78);
 }
 .preloader {
   position: fixed;
@@ -32,7 +31,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgb(221, 199, 160);
+  background: #ffff;
   z-index: 999;
 }
 .content {
@@ -93,18 +92,18 @@ a {
   transition: all 0.5s;
   left: 50%;
   top: 50%;
-  background-color: rgb(123, 120, 120);
+  background-color: rgb(169, 165, 165);
   transform: translate(-50%, -50%);
 }
 .menu-btn::before {
   content: "";
-  background-color: rgb(123, 120, 120);
+  background-color: rgb(169, 165, 165);
   transform: translate(-20px, -12px);
 }
 .menu-btn::after {
   content: "";
   transform: translate(-20px, 9px);
-  background-color: rgb(132, 126, 126);
+  background-color: rgb(169, 165, 165);
 }
 
 .toggle-icon .menu-btn::before {
@@ -118,12 +117,11 @@ a {
 }
 
 .fixed-nav {
-  background: white;
+  background: #ffff;
   padding: 19px 10%;
   width: 100%;
   transition: top 1s;
   top: -100px;
-
   box-shadow: 0px 2.5px 2px rgb(241, 240, 240);
 }
 .theme :is(.footer-container) {
@@ -133,7 +131,7 @@ a {
 .theme .fixed-nav {
   background-color: #1c1e26;
   box-shadow: 0px 1px 1px rgb(106, 103, 103);
-  color: rgb(209, 202, 202);
+  color: rgb(167, 161, 161);
 }
 
 .fixed-nav.show-nav {
@@ -165,15 +163,16 @@ ul {
 ul a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(169, 165, 165);
+  color: rgb(143, 141, 141);
   position: relative;
   transition: all 0.5s;
+  font-weight: 500;
 }
 ul a::after {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #fc700c;
+  background-color: rgb(52, 92, 211);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -193,11 +192,11 @@ ul a:hover::after {
 }
 
 h3 span {
-  color: #fc700c;
+  color: rgb(52, 92, 211);
 }
 
 .underline {
-  background-color: #fc700c;
+  background-color: rgb(52, 92, 211);
   width: 100%;
   height: 3px;
   position: absolute;
@@ -210,7 +209,7 @@ h3 span {
   width: 50%;
   bottom: -7px;
   left: 0;
-  background-color: #fc700c;
+  background-color: rgb(52, 92, 211);
   height: 3px;
   position: absolute;
   border-radius: 10px;
@@ -218,9 +217,10 @@ h3 span {
 
 .header-left h1 {
   font-size: 40px;
+  color: rgb(169, 165, 165);
 }
 .header-left h1 span {
-  color: #f88838;
+  color: rgb(52, 92, 211);
 }
 .btn-flex {
   margin-top: 10px;
@@ -237,14 +237,22 @@ h3 span {
   border: 0;
   cursor: pointer;
   padding: 8px;
-  color: #f67e29;
-  background-color: #ffff;
-  border: 2px solid #f67e29;
+  background: #ffff;
+  color: rgb(73, 112, 227);
+  text-wrap: nowrap;
+  border: 2.5px solid royalblue;
   font-weight: 500;
   font-size: 18px;
   border-radius: 20px;
 }
 
+:is(.btn, .cv):hover {
+  background: #ffff;
+  border: 2.5px solid royalblue;
+}
+.cv a {
+  color: rgb(73, 112, 227);
+}
 .img {
   margin-bottom: 20px;
   display: block;
@@ -274,7 +282,7 @@ h3 span {
   flex-basis: 70%;
 }
 .header-right {
-  margin-top: 15px;
+  margin-top: 30px;
   flex-basis: 30%;
   display: flex;
   justify-content: center;
@@ -283,8 +291,8 @@ h3 span {
   /* gap: 10px; */
 }
 .header-desc p {
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 7px;
 }
 .header-desc {
@@ -308,7 +316,8 @@ h3 span {
 .icons a {
   width: 35px;
   height: 35px;
-  border: 1.5px solid #fc700c;
+
+  border: 2.5px solid royalblue;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -316,21 +325,8 @@ h3 span {
   text-decoration: none;
   background-color: white;
 }
-
-.btn:hover {
-  cursor: pointer;
-  background-color: #e0c6b3;
-}
-.cv:hover {
-  cursor: pointer;
-  background-color: #e0c6b3;
-}
-
-.cv a {
-  text-decoration: none;
-  color: #fc700c;
-  font-size: 16px;
-  text-wrap: nowrap;
+.icons a:hover {
+  background: #ffff;
 }
 
 /* -------------About-------------- */
@@ -383,14 +379,12 @@ h3 span {
   border-radius: 10px;
   height: fit-content;
 }
-.fa-github {
-  color: rgb(171, 168, 168);
-}
+
 .sub-title {
   padding-bottom: 10px;
   font-size: 40px;
   font-weight: 600;
-  color: #f88838;
+  color: rgb(52, 92, 211);
 }
 .about-text {
   padding-bottom: 20px;
@@ -411,26 +405,31 @@ h3 span {
   color: #f88838 !important;
 }
 .skill-grid .fa-github {
-  color: rgb(148, 144, 144);
+  color: rgb(109, 107, 107);
 }
 .links {
   white-space: nowrap;
   margin: 0 20px 7px 0;
   font-size: 17px;
   padding: 8px;
-  background-color: rgb(241, 239, 239);
+  color: grey;
+  border: 2.5px solid royalblue;
+
+  background-color: #ffff;
   border-radius: 20px;
   transition: all 0.5s;
-  border: none;
   cursor: pointer;
 }
 .links:hover {
   cursor: pointer;
+  background: #f3f1f1;
 }
 
 .links.active-link {
+  background: linear-gradient(purple, royalblue);
   color: white;
-  background-color: #f88838;
+  text-wrap: nowrap;
+  border: 2.5px solid royalblue;
 }
 
 @keyframes bounce {
@@ -447,11 +446,9 @@ h3 span {
 
 .p {
   margin-top: 6px;
+  line-height: 24px;
 }
-.p span {
-  font-style: oblique;
-  font-size: 14px;
-}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -487,7 +484,7 @@ h3 span {
   line-height: 27px;
 }
 .service-details i {
-  color: #f67416;
+  color: rgb(52, 92, 211);
   font-size: 20px;
   margin-left: 150px;
 }
@@ -497,18 +494,19 @@ h3 span {
   border-radius: 10px;
   border: 1px solid grey;
   transition: all 0.5s;
-  color: rgb(35, 34, 34);
+  color: rgb(139, 133, 133);
   text-align: center;
 }
 .theme :is(.service-grid div, .items, .details, input, textarea) {
   background-color: #837d7d;
+  color: rgb(202, 198, 198);
 }
 .service-grid div:hover {
   background-color: rgb(217, 211, 201);
 }
 
 h2 span {
-  color: #f57113;
+  color: rgb(52, 92, 211);
 }
 h2 {
   font-size: 25px;
@@ -529,11 +527,11 @@ h2 {
 .fa-app-store-ios,
 .fa-code,
 .fa-crop {
-  color: #ea6405 !important;
+  color: rgb(52, 92, 211) !important;
   font-size: 30px !important;
 }
 .details i {
-  color: #ea6405;
+  color: rgb(78, 113, 216);
 }
 /* -------------Projects------------------ */
 #project {
@@ -588,7 +586,7 @@ h2 {
   z-index: 5;
   bottom: 15px;
   left: 3%;
-  color: #ea6405;
+  color: rgb(52, 92, 211);
 }
 .items h5 {
   padding-top: 15px;
@@ -642,32 +640,35 @@ h2 {
 .form input,
 textarea {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 15px;
   border: none;
   border: 1.5px solid rgb(216, 214, 214);
-  /* box-shadow: 0 0 2px rgb(22, 22, 22); */
-  caret-color: red;
-}
-:is(input, textarea):focus {
   outline: none;
-}
-:is(input, textarea)::placeholder {
-  color: rgb(35, 34, 34);
+  caret-color: royalblue;
 }
 
+:is(input, textarea)::placeholder {
+  color: grey;
+  font-size: 16px;
+}
+.theme :is(input, textarea)::placeholder {
+  color: rgb(210, 208, 208);
+}
 input {
-  height: 30px;
+  padding: 10px 15px;
 }
 #form-btn {
-  background-color: #f2741a;
+  background: linear-gradient(purple, royalblue);
   color: white;
   width: 40%;
-  transition: all 0.5s;
+  border: 2.5px solid royalblue;
+  transition: all 0.5s ease;
 }
 #form-btn:hover {
-  background-color: #dcb9a1;
-  border: 2px solid #f56f10;
+  background: rgb(202, 214, 248);
+  border: 2.5px solid royalblue;
+  color: grey;
 }
 
 .contact-col1 {
@@ -692,14 +693,13 @@ input {
   font-size: 16px;
   padding-right: 10px;
 }
-.details a {
+.theme .contact-text {
+  color: rgb(170, 168, 168);
+}
+.theme .details a {
   text-decoration: none;
-  color: antiquewhite;
 }
-.fa-paper-plane,
-.fa-phone {
-  color: #ea6405;
-}
+
 .theme-btn {
   position: relative;
   width: 40px;
@@ -726,14 +726,14 @@ input {
 .fa-solid {
   font-size: 20px;
   padding: 0 6px;
-  color: rgb(136, 133, 133);
+  color: royalblue !important;
 }
 
 .details {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  color: rgb(165, 163, 163);
+  color: rgb(206, 203, 203);
   background-color: #ffff;
   box-shadow: 0 0 7px 0 #ea64;
   border: 1.5px dotted rgb(216, 214, 214);
@@ -742,13 +742,17 @@ input {
 }
 
 .details p {
-  color: rgb(79, 77, 77);
+  color: rgb(129, 125, 125);
+}
+.theme .details p {
+  color: rgb(211, 209, 209);
 }
 .link-2 {
   position: fixed;
   right: 25px;
   bottom: 55px;
-  background-color: #ed731c;
+  background: linear-gradient(purple, royalblue);
+
   padding: 3px;
   border-radius: 6px;
   animation: bounce 1s infinite linear;
@@ -757,7 +761,7 @@ input {
 }
 .fa-angle-up {
   font-size: 23px;
-  color: white;
+  color: white !important;
 }
 .link-2.top-link {
   opacity: 1;
@@ -767,12 +771,13 @@ input {
   padding: 30px 0;
   text-align: center;
   background: #ffff;
-  color: black;
-  font-weight: 500;
+  color: grey;
+  font-size: 18px;
+  font-weight: 600;
 }
 #footer p {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   margin-top: 10px;
 }
 
@@ -908,12 +913,6 @@ input {
     display: none;
   }
 
-  .fa-app-store-ios,
-  .fa-code,
-  .fa-crop {
-    color: #ea6405;
-    font-size: 30px;
-  }
   .intro,
   .type-container {
     width: 100%;
