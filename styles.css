@@ -7,13 +7,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: rgb(112, 108, 108);
   font-family: "Roboto", sans-serif;
+  color: rgb(97, 94, 94);
+
   position: relative;
 }
 .theme {
+  color: rgb(201, 196, 196);
   background-color: #1c1e26;
-  color: rgb(209, 202, 202);
 }
 header {
   width: 100%;
@@ -31,7 +32,7 @@ a {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #ffff;
+  background-color: rgb(19, 18, 18);
   z-index: 999;
 }
 .content {
@@ -117,21 +118,21 @@ a {
 }
 
 .fixed-nav {
-  background: #ffff;
-  padding: 19px 10%;
+  padding: 19px 5%;
   width: 100%;
   transition: top 1s;
   top: -100px;
   box-shadow: 0px 2.5px 2px rgb(241, 240, 240);
+  background: #ffff;
 }
 .theme :is(.footer-container) {
   background-color: rgb(19, 18, 18);
-  color: rgb(160, 157, 157);
+  color: rgb(201, 196, 196);
 }
 .theme .fixed-nav {
   background-color: #1c1e26;
   box-shadow: 0px 1px 1px rgb(106, 103, 103);
-  color: rgb(167, 161, 161);
+  color: rgb(201, 196, 196);
 }
 
 .fixed-nav.show-nav {
@@ -163,10 +164,13 @@ ul {
 ul a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(143, 141, 141);
+  color: rgb(124, 120, 120);
   position: relative;
   transition: all 0.5s;
   font-weight: 500;
+}
+.theme ul a {
+  color: rgb(201, 196, 196);
 }
 ul a::after {
   content: "";
@@ -188,9 +192,11 @@ ul a:hover::after {
   display: inline;
   position: relative;
   z-index: 3;
-  color: rgb(169, 165, 165);
+  color: rgb(148, 143, 143);
 }
-
+.theme .logo {
+  color: rgb(201, 196, 196);
+}
 h3 span {
   color: rgb(52, 92, 211);
 }
@@ -217,7 +223,10 @@ h3 span {
 
 .header-left h1 {
   font-size: 40px;
-  color: rgb(169, 165, 165);
+  color: rgb(148, 143, 143);
+}
+.theme .header-right h1 {
+  color: rgb(201, 196, 196);
 }
 .header-left h1 span {
   color: rgb(52, 92, 211);
