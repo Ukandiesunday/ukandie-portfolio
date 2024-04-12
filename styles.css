@@ -193,6 +193,7 @@ ul a:hover::after {
   position: relative;
   z-index: 3;
   color: rgb(148, 143, 143);
+  font-style: oblique;
 }
 .theme .logo {
   color: rgb(201, 196, 196);
