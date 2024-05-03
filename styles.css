@@ -631,6 +631,9 @@ h2 {
   padding: 7px 5px;
 }
 
+.items a {
+  text-decoration: none !important;
+}
 /* ---------------Contact-------------------- */
 .contact {
   background-color: #efefef;
